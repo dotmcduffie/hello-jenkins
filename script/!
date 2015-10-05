@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sh  -i /var/lib/jenkins/.ssh/id_rsa -t app@54.209.25.107 | 
+ cd /home/app| 
+ touch foo
