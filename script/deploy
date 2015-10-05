@@ -2,7 +2,8 @@
 ssh  -i /var/lib/jenkins/.ssh/id_rsa -t app@54.209.25.107 <<EOF
   cd /home/app
   git clone https://d96627b98a4893abc81c2738b983b247e731bdfb/dotmcduffie/hello-jenkins.git
-  cd /hello-jenkins
+  wait  
+  cd hello-jenkins
   npm install --production
   ./scrpt/test 
   exit
