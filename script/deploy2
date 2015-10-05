@@ -1,7 +1,6 @@
 #!/bin/bash
 
-sh  -i /var/lib/jenkins/.ssh/id_rsa -t app@54.209.25.107  
-{
+sh  -i /var/lib/jenkins/.ssh/id_rsa -tt app@54.209.25.107 <<EOF 
  cd ~
  touch foo
-}
+EOF
