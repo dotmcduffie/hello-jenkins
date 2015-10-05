@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 sh  -i /var/lib/jenkins/.ssh/id_rsa -t app@54.209.25.107 <<EOF 
  cd /home/app
